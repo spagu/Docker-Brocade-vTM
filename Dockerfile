@@ -11,7 +11,7 @@ ENV ZEUS_LIC=
 # ZEUS_PASS=[RANDOM|SIMPLE]: generate a random pass, ZEUS_PASS=STRONG to employ more symbols.
 # Or ZEUS_PASS=<your password>
 ENV ZEUS_PASS=RANDOM
-# ZEUS_DOM can be used to set a domain and ensure the host has a FQDN.
+# ZEUS_DOM can be used to set a domain and ensure the host has a FQDN. 
 ENV ZEUS_DOM=
 # ZEUS_PACKAGES can be used to install additional packages on first run. 
 # If you need Java Extensions.... Eg ZEUS_PACKAGES="openjdk-7-jre-headless"
