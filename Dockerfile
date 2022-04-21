@@ -1,6 +1,6 @@
-FROM pulsesecure/vtm:18.3
+FROM pulsesecure/vtm:21.4
 RUN apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y dnsutils curl iproute2 iptables libxtables11 python python-requests \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y dnsutils curl iproute2 iptables libxtables12 python python-requests \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 COPY dockerScaler.py runzeus.sh /usr/local/zeus/
 # ZEUS_EULA must be set to "accept" otherwise the container will do nothing
