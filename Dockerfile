@@ -1,4 +1,4 @@
-FROM pulsesecure/vtm:22.1
+FROM pulsesecure/vtm:22.3R1
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y dnsutils curl iproute2 iptables libxtables12 python python3-requests \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
